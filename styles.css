@@ -169,9 +169,7 @@ body {
 
 .register-section {
   background: radial-gradient(circle at top, #0e1aee94 0%, #000 53%);
-  padding: 7rem;
-  border: 1px solid;
-  border-image: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%) 1;
+  padding: 6rem;
   border-radius: 35px;
 }
 
@@ -300,4 +298,10 @@ body {
 
 .form-control, .form-select {
   border-image: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%) 1;
+}
+
+.footer-border {
+    background: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%);
+    padding: 1px 0.8rem;
+    border-radius: 35px;
 }
