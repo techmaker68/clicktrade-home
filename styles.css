@@ -35,6 +35,12 @@ body {
   z-index: 1;
 }
 
+.form-control,
+.form-select {
+  /* border-image: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%) 1; */
+  height: 50px;
+
+}
 
 .video-section video {
   /* border-width: 10px; */
@@ -46,10 +52,10 @@ body {
 }
 
 .video-section .img-shadow {
-    position: absolute;
-    top: -4rem;
-    left: 9rem;
-    z-index: 1;
+  position: absolute;
+  top: -4rem;
+  left: 9rem;
+  z-index: 1;
 }
 
 .video-section .video-box {
@@ -91,6 +97,11 @@ body {
 
 .mbImg {
   display: none;
+}
+
+.deskImg{
+   -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
 }
 
 @media screen and (max-width: 768px) {
@@ -233,7 +244,7 @@ body {
     justify-content: unset !important;
     padding-top: 3.5rem;
   }
-  
+
   .hero .person {
     top: 0;
     bottom: 0;
@@ -254,14 +265,24 @@ body {
     width: 160px;
     height: auto !important;
   }
+
   .hero .container h3 {
     font-size: 16px;
     margin-top: 0 !important;
   }
+
   .hero p {
     font-size: 9px !important;
   }
+
+  .form-control,
+  .form-select {
+    /* border-image: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%) 1; */
+    height: 44.784px;
+
+  }
 }
+
 
 .car-cover {
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0));
@@ -282,7 +303,6 @@ body {
   z-index: 2;
   width: 80%;
   margin: 0 auto
-
 }
 
 .video-wrapper video {
@@ -296,12 +316,119 @@ body {
   height: 20px;
 }
 
-.form-control, .form-select {
-  border-image: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%) 1;
-}
+
 
 .footer-border {
-    background: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%);
-    padding: 1px 0.8rem;
-    border-radius: 35px;
+  background: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%);
+  padding: 1px 0.8rem;
+  border-radius: 35px;
+}
+
+.input-border {
+  border-radius: 12px;
+  padding: 1px;
+  /* thickness of the "border" */
+  background: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%);
+  display: inline-block;
+}
+
+.input-border .form-control {
+  border: none;
+  border-radius: 10px;
+  /* slightly smaller to fit within */
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: #12132f;
+  /* or transparent if you prefer */
+  color: white;
+}
+
+
+.gradient-border-wrapper {
+  padding: 1px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, white 0%, #33333300 40%, #333 100%);
+}
+
+.borderless-inputs {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+
+.borderless-inputs .form-select,
+.borderless-inputs .form-control {
+  border: none;
+  background-color: #12132f;
+  /* or transparent */
+  color: white;
+  height: 50px;
+}
+
+.country-code {
+  max-width: 100px;
+  border-right: 1px solid #333;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.phone-input {
+  flex: 1;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.video-reel {
+  background-image: url('assets/IMAGE-bg.png'); /* Replace with correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 0; /* optional spacing */
+  width: 100%;
+
+   -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 89%, transparent);
+}
+
+.video-reel .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 336px !important;
+  height: 447px !important; */
+  border-radius: 20px;
+
+}
+
+.video-reel video {
+  width: 100%;
+  height: auto;
+  /* max-width: 300px; */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.video-reel .carousel-img {
+  border-radius: 20px;
+  /* width: 336px; */
+  /* height: 447px; */
+  flex-shrink: 0;
+}
+
+.video-reel .swiper-pagination-bullet {
+  width: 46.988px;
+  height: 3.614px;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.40);
+}
+
+.video-reel .swiper-pagination {
+  margin-top: 61px !important;
+  position: relative !important;
+}
+
+.video-reel .swiper-pagination-bullet-active {
+  /* opacity: var(--swiper-pagination-bullet-opacity, 1); */
+  background: linear-gradient(135deg, #35AAFF 0%, #194BFB 100%)
 }

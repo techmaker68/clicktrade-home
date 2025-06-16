@@ -7,6 +7,8 @@
   <title>EliteDel Landing Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -14,15 +16,18 @@
   <!-- Header Section -->
   <section
     class="hero text-white text-center d-flex flex-column justify-content-center align-items-center position-relative">
-    <img src="assets/person.png" alt="Hero Background" class=" d-none d-sm-block position-absolute h-100 object-fit-cover person">
-    <img src="assets/car-cover.png" alt="Hero Background" class=" d-none d-sm-block position-absolute h-100 object-fit-cover car-cover">
-    <img src="assets/mobile-home-image-transparent.png" alt="Hero Background" class=" d-sm-none position-absolute h-100 object-fit-cover car-cover">
+    <img src="assets/person.png" alt="Hero Background"
+      class=" d-none d-sm-block position-absolute h-100 object-fit-cover person">
+    <img src="assets/car-cover.png" alt="Hero Background"
+      class=" d-none d-sm-block position-absolute h-100 object-fit-cover car-cover">
+    <img src="assets/mobile-home-image-transparent.png" alt="Hero Background"
+      class=" d-sm-none position-absolute h-100 object-fit-cover car-cover">
     <div class="container">
       <img src="assets/logo-placeholder.png.png" alt="Logo" class="mb-5" style="height: 38px;">
       <h3 class="mb-2 mt-4">MISION 10x</h6>
         <h1 class="fw-bold display-1">Aprende y genera dinero conmigo en el proceso</h1>
         <p class="mb-4">Verás en directo lo que nadie nunca te ha enseñado: Cómo se gana de verdad.</p>
-        <a href="#" class="mt-4"><img src="assets/start-for-free.png" class="img-fluid" /> </a>
+        <a href="#registration" class="mt-4"><img src="assets/start-for-free.png" class="img-fluid" /> </a>
     </div>
   </section>
 
@@ -31,13 +36,13 @@
   <section class="video-section text-center">
 
     <div class="container d-flex flex-column position-relative ">
-        <img src="assets/Line 1.png" alt="Learn Background" class="img-fluid img-shadow">
+      <img src="assets/Line 1.png" alt="Learn Background" class="img-fluid img-shadow">
       <div class="video-wrapper">
         <video muted playsInline controls autoplay>
           <source src="assets/videos/candles.mp4" type="video/mp4" />
         </video>
       </div>
-      <a href="#"><img src="assets/start-now.png" class="img-fluid mt-5" /></a>
+      <a href="#registration"><img src="assets/start-now.png" class="img-fluid mt-5" /></a>
     </div>
   </section>
 
@@ -50,10 +55,10 @@
 
   <!-- Clients Section -->
   <section class="clients-section pt-5 text-white position-relative d-flex flex-column ">
-    <h4 class="text-center k-m-3 display-6" style="z-index: 99;">What our clients says</h4>
-    <div class="deskImg" style="margin-top: -5rem;">
+    <!-- <h4 class="text-center k-m-3 display-6" style="z-index: 99;">What our clients says</h4> -->
+    <!-- <div class="deskImg" style="margin-top: -5rem;">
       <img src="assets/client-says.png" alt="Learn Background" class="img-fluid deskImg">
-    </div>
+    </div> -->
     <div class="container mbImg">
       <div class="py-5">
         <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -105,6 +110,145 @@
       </div>
     </div>
   </section>
+  <!--  new slider component -->
+  <section class="video-reel d-none d-sm-block">
+    <h4 class="text-center k-m-3 display-6 mb-5" style="z-index: 99; color: #fff;">What our clients says</h4>
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/ILIA2 (1).png" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Discover more of our next-gen platform</h5>
+            <p>Explore every product, feature and offering we provide out of the box.</p>
+          </div> -->
+        </div>
+        <!-- slide 2 -->
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/WESTCOOL2.svg" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Another feature highlight</h5>
+            <p>Details about more capabilities and innovations we offer.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/LORENZO2.svg" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Another feature highlight</h5>
+            <p>Details about more capabilities and innovations we offer.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/CECY2.svg" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Another feature highlight</h5>
+            <p>Details about more capabilities and innovations we offer.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/ALEXTOPURIA2.svg" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Another feature highlight</h5>
+            <p>Details about more capabilities and innovations we offer.</p>
+          </div> -->
+        </div>
+        <div class="swiper-slide carousel-item">
+          <video class="carousel-img" muted loop preload="metadata" poster="assets/VICTOR2.svg" playsinline>
+            <source src="assets/videos/candles.mp4" type="video/mp4" />
+          </video>
+          <!-- <div class="carousel-caption">
+            <h5>Another feature highlight</h5>
+            <p>Details about more capabilities and innovations we offer.</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="swiper-pagination mt-5"></div>
+    </div>
+  </section>
+  <!--  modal for new slider component -->
+
+  <!-- <div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <video muted loop preload="metadata">
+          <source src="assets/videos/candles.mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-caption">
+          <h5>Another feature highlight</h5>
+          <p>Details about more capabilities and innovations we offer.</p>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <video muted loop preload="metadata">
+          <source src="assets/videos/candles.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="swiper-slide">
+        <video muted loop preload="metadata">
+          <source src="assets/videos/candles.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="swiper-slide">
+        <video muted loop preload="metadata">
+          <source src="assets/videos/candles.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div> -->
+
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <div class="swiper popup-swiper h-100">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <video muted controls class="w-100 h-100 object-cover">
+                  <source src="assets/videos/candles.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="swiper-slide">
+                <video muted controls class="w-100 h-100 object-cover">
+                  <source src="assets/videos/candles.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="swiper-slide">
+                <video muted controls class="w-100 h-100 object-cover">
+                  <source src="assets/videos/candles.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="swiper-slide">
+                <video muted controls class="w-100 h-100 object-cover">
+                  <source src="assets/videos/candles.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+          data-bs-dismiss="modal"></button>
+      </div>
+    </div>
+  </div>
 
   <!-- Student Results -->
   <section>
@@ -114,10 +258,10 @@
   </section>
 
   <!-- Registration Section -->
-  <div class="container my-5">
+  <div class="container my-5" id="registration">
     <div class="footer-border">
       <div class="register-section row align-items-center text-white position-relative">
-  
+
         <!-- Left Column: Text -->
         <div class="col-md-7 text-column">
           <img src="assets/person.png" alt="Hero Background" class="position-absolute h-100 object-fit-cover person">
@@ -127,7 +271,7 @@
             Subscribe and start trading smarter.
           </p>
         </div>
-  
+
         <!-- Right Column: Form -->
         <div class="col-md-4 form-column">
           <h4 class="mb-4">Register Now</h4>
@@ -135,36 +279,97 @@
             <div class="row mb-3">
               <div class="col-md-6 col-6">
                 <label class="form-label">First Name</label>
-                <input type="text" class="form-control" placeholder="First Name">
+                <div class="input-border">
+
+                  <input type="text" class="form-control" placeholder="">
+                </div>
               </div>
               <div class="col-md-6 col-6">
                 <label class="form-label">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last Name">
+                <div class="input-border">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
               </div>
             </div>
-  
-            <div class="mb-3">
+
+            <div class="mb-3 d-flex flex-column">
               <label class="form-label">Email</label>
-              <input type="email" class="form-control" placeholder="Email">
+              <div class="input-border">
+                <input type="email" class="form-control" placeholder="">
+              </div>
             </div>
-  
+
             <div class="mb-4">
               <label class="form-label">Phone Number</label>
-              <div class="input-group">
-                <select class="form-select" style="max-width: 100px; border-right: 0">
-                  <option selected>+971</option>
-                </select>
-                <input type="text" class="form-control" placeholder="Phone Number" style="border-left: 0; border-image: none">
+              <div class="gradient-border-wrapper">
+                <div class="input-group borderless-inputs">
+                  <select class="form-select country-code">
+                    <option selected>+971</option>
+                  </select>
+                  <input type="text" class="form-control phone-input" placeholder="">
+                </div>
               </div>
             </div>
+
             <a href="#" class="submit-link"><img src="assets/register-now.png" class="img-fluid w-100 mt-3" /> </a>
           </form>
         </div>
       </div>
+    </div>
   </div>
-</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize main swiper
+    const mainSwiper = new Swiper('.main-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: {
+        0: {
+          direction: 'vertical',
+          slidesPerView: 1,
+          spaceBetween: 8,
+        },
+        576: {
+          direction: 'horizontal',
+          slidesPerView: 2,
+          spaceBetween: 12,
+        },
+        768: {
+          direction: 'horizontal',
+          slidesPerView: 3,   // ← show 4 slides at once now
+          spaceBetween: 10,
+        },
+        1024: {
+          direction: 'horizontal',
+          slidesPerView: 4,   // ← show 4 slides at once now
+          spaceBetween: 10,
+        }
+      }
+    });
+
+    // Initialize popup swiper
+    const popupSwiper = new Swiper('.popup-swiper', {
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    // Play on hover, click to open modal
+    document.querySelectorAll('.main-swiper video').forEach((vid, idx) => {
+      // vid.addEventListener('mouseenter', () => vid.play());
+      // vid.addEventListener('mouseleave', () => vid.pause());
+      vid.addEventListener('click', () => {
+        popupSwiper.slideTo(idx);
+        new bootstrap.Modal(document.getElementById('videoModal')).show();
+      });
+    });
+  </script>
 </body>
 
 </html>
